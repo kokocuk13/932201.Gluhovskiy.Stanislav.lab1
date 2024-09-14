@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 2px; /* Увеличиваем расстояние между буквами */
+}
+header, footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    line-height: 15%;
+}
+main {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+    width: 38%;
+    position: relative;
+}
+h1 {
+    color: white;
+}
+h2 {
+    span{color: red;}
+    color: white;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.centered-link {
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    margin: 20px 0; /* Отступы сверху и снизу, если нужно */
+}
+a {
+    color: red;
+    text-decoration: none;
+}       
+ a:hover {
+    text-decoration: underline;
+}
+p {
+    margin-bottom: 20px; /* Выделяем абзацы отступами */
+    
+}
+/* Стиль для закругленной фигуры */
+.figure {
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 30px;
+    float: left; 
+    margin-right: 20px;
+    /* position: absolute;
+    top: 10px;
+    left: 10px; */
+    
+}
+.styles span {
+    display: block;
+    margin: 5px 0;
+}
+.styles .italic {
+    font-style: italic;
+}
+.styles .bold {
+    font-weight: bold;
+}
+.styles .underline {
+    text-decoration: underline;
+}
+.styles .line-through {
+    text-decoration: line-through;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    max-width: 220px;
+    max-height: 100px;
+    margin: 50px 0;
+    position: absolute;
+    bottom: 60px;
+    right: 24px;
+    
+}
+.grid div {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+}
+.grid div:nth-child(1) {
+    grid-row: span 2; /* Цифра 1 занимает 2 строки */
+    background-color: green;
+    column-width: 60px;
+    line-height: 100px;
+    
+}
+.grid div:nth-child(2),
+.grid div:nth-child(3),
+.grid div:nth-child(4),
+.grid div:nth-child(5),
+.grid div:nth-child(6) {
+    background-color: blue;
+}
+ 
+.grid div:nth-child(7) {
+    grid-column: span 2; /* Цифра 7 занимает 2 колонки */
+    background-color: red;
+    
+}
+.images-in-corner {
+    float: right;
+    bottom: 10px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    
+}
